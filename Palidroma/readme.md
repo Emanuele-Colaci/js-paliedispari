@@ -5,3 +5,4 @@ PROBLEMA: Chiedere all’utente di inserire una parola Creare una funzione per c
 3 - Utilizzare .reverse per invertire la parola
 4 - ?SE la parola e palindroma stampala in cosole;
 5 - :ALTRIMENTI stampa in console che la parola non è palindroma;
+6 - FINE.
