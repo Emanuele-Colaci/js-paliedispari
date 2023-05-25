@@ -1,12 +1,13 @@
 //SCELTA DELL'UTENTE
 let utente = prompt('Scegli pari o dispari');
 let numero = parseInt(prompt('Inserisci un numero da 1 a 5:'));
-let numeroRandom = parseInt('');
+
 
 //FUNZIONE
 function random(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
 
 function pariODispari(pari_dispari) {
     if(pari_dispari % 2 === 0){
@@ -15,21 +16,16 @@ function pariODispari(pari_dispari) {
         return "dispari";
     }
 }
-numeroRandom = random(1 , 5);
 
 //VARIABILI
-let computer = random();
-let sommaUtente = computer + numero;
-let risultato = pariODispari(sommaUtente);
+let computer = random(1, 5);
+let sommaTot = computer + numero;
+let risultato = pariODispari(sommaTot);
+console.log('computer: ', computer);
+console.log('utente ', numero)
 
 //CONDIZIONI
-if((risultato === 'pari') || (risultato === 'dispari')){
-    console.log("Hai vinto!");
-}else{
-    console.log("Hai perso =(");
-}
-
-if((utente === 'pari') || (utente === 'dispari')){
+if((risultato === 'pari' && utente === 'pari') || (utente === 'dispari' && risultato === 'dispari')){
     console.log("Hai vinto!");
 }else{
     console.log("Hai perso =(");
