@@ -3,7 +3,9 @@ let utente = prompt('Inserisci una parola');
 
 //FUNZIONE
 function palindroma(a){
-    if(a === utente.split('').reverse().join('')){
+    let palindroma = a.split('').reverse().join('')
+
+    if(a === palindroma){
         return true;
     }else{
         return false;
