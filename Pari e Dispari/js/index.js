@@ -2,6 +2,15 @@
 let utente = prompt('Scegli pari o dispari');
 let numero = parseInt(prompt('Inserisci un numero da 1 a 5:'));
 
+//CONTROLLI
+while(utente !== 'pari' && utente !== 'dispari'){
+    utente = prompt('Puoi scegliere solo pari o dispari');
+}
+
+while(isNaN(numero) || numero < 1 || numero > 5){
+    numero = parseInt(prompt('Puoi inserire solo un numero da 1 a 5:'));
+}
+
 
 //FUNZIONE
 function random(min, max){
