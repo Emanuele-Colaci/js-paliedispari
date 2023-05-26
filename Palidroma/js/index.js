@@ -5,7 +5,7 @@ let utente = prompt('Inserisci una parola');
 function palindroma(a){
     let palindroma = a.split('').reverse().join('')
 
-    if(a === palindroma){
+    if(a.toLowerCase() === palindroma.toLowerCase()){
         return true;
     }else{
         return false;
